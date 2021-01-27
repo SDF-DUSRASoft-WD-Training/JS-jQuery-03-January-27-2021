@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>JavaScript, jQuery, CSS</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!--
+
+            Mixitup Plugin
+            https://www.kunkalabs.com/mixitup/
+
+        -->
+
+        <button data-filter="all" >All Items</button>
+        <button data-filter=".web-design" >Web Design</button>
+        <button data-filter=".graphics-design" >Graphics Design</button>
+        <button data-filter=".digital-markeing" >Digital Marketing</button>
+
+        <button type="button" data-sort="order:asc">Ascending</button>
+        <button type="button" data-sort="order:descending">Descending</button>
+        <button type="button" data-sort="random">Random</button>
+
+
+        <section class="container" id="container">
+            <div class="mix web-design" data-order="1">Web Design 343</div>
+
+            <div class="mix digital-markeing" data-order="2">Digital Marketing 654</div>
+
+            <div class="mix graphics-design" data-order="3">Graphics Design 321</div>
+
+            <div class="mix digital-markeing" data-order="4">Digital Marketing</div>
+
+            <div class="mix web-design digital-markeing" data-order="5">Web Design and Digital Marketing</div>
+
+            <div class="mix web-design" data-order="6">Web Design 327</div>
+
+            <div class="mix web-design" data-order="7">Web Design 8965</div>
+
+            <div class="mix web-design" data-order="8">Web Design 5674</div>
+
+            <div class="mix graphics-design" data-order="9">Graphics Design 453467</div>
+
+            <div class="mix graphics-design digital-markeing" data-order="10">Digital marketing and Graphics Design</div>
+        </section>
+
+        
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/mixitup.min.js"></script>
+        <script>
+            // $("#container").mixItUp();
+            var mixer = mixitup('#container');
+        </script>
+    </body>
+</html>

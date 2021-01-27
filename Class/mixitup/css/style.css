@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: auto;
+    max-width: 100%;
+}
+
+
+section#container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mix {
+    width: 31.33%;
+    height: 200px;
+    background-color: gold;
+    color: #000;
+    margin: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.web-design{
+    background-color: red;
+}
+.graphics-design{
+    color: #fff;
+    background-color: black;
+}
+.digital-marketing{
+    background-color: gold;
+}
+
+@media (max-width: 700px){
+    .mix{
+        width: 48%;
+    }
+}
